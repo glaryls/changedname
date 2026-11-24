@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>namechangewebsite</title>
+    <style>
+        body {
+            background-color:rgba(200,150,255,0.5);
+        }
+        p {
+            font-size:18px;
+            font-family:Helvetica;
+        }
+        table {
+            font-family:Helvetica;
+            border:2px solid black;
+        }
+        td {
+            border:2px solid black;
+        }
+            
+        form {
+            font-family:Helvetica;
+            background-color:rgba(150,200,255,0.5);
+            border:black,2px,solid;
+        }
+        .main {
+            border:black,solid,2px;
+            margin:20px 10px;
+            padding:10px;
+        }
+        .centered {
+            text-align:center;
+        }
+        section.gridtainer { /*beginning of grid */
+            display: grid;
+            width:40%;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template:
+            'hd hd hd hd hd hd'
+            'nv mn mn mn mn mn'
+            'nv mn mn mn mn mn'
+            'nv mn mn mn mn mn '
+            'ft ft ft  ft  ft .'
+            ;
+            gap: 5px;
+
+        }
+        div.grid-item1 .grid-item2.grid-item3.grid-item4 {
+            background-color: rgba(0, 0, 0, 1);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            height:50px;
+        }
+        div.grid-item1 {
+        grid-area: hd; /*header*/
+        background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            color:white;
+            height:50px
+        }
+        div.grid-item2 {
+        grid-area: nv; /*navigation*/
+        background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            color:white;
+            height:50px
+        }
+        div.grid-item3 {
+        grid-area: mn; /*main content*/
+        background-color: rgba(0, 0, 0, 0.8);
+            border: 3px solid rgba(255, 0, 255, 0.8);
+            padding: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            color:white;
+            height:50px
+        }
+        div.grid-item4 {
+        grid-area: ft; /*footer*/
+        background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            color:white;
+            height:50px
+        } /*end of grid*/
+        
+        /*twin, dont touch this code it kinda keeps the whole thing together lmao */
+        section.gridtastic { 
+            display:grid;
+            margin:auto;
+            padding:5%;
+            grid-template-columns:repeat(3,1fr);
+            width:90%;
+            grid-template:
+            'tt1 tt1 .'
+            'mm1 mm1 .'
+            'tt2 tt2 .'
+            'mm2 mm2 .'
+            'cc cc cc'
+            ;
+            gap:10px;
+        }
+        div.tt1 { /*assortments of titles*/
+          grid-area:tt1;
+          font-size:32px;
+        }
+        div.mm1 { /*main media (boring ash)*/
+            grid-area:mm1;
+           border:2px solid black;
+           padding:5%;
+           width:65%;
+           background-color:rgba(255, 255, 255, 0.4);
+         }
+        div.cc { /*at last, closure*/
+            grid-area:cc;
+            border:2px solid black;
+            padding:5%;
+            font-weight:bold;
+            margin:auto;
+            
+            width:85%;
+            background-color:rgba(255, 255, 255, 0.4);
+        }
+        div.tt2 {
+            grid-area:tt2;
+            font-size:32px;
+        }
+        div.mm2{
+            grid-area:mm2;
+            border:2px solid black;
+            padding:5%;
+           width:65%;
+           background-color:rgba(255, 255, 255, 0.4);
+        }
+    </style><!--why cant i remember -->
+</head>
+<body>
+    
+    <blockquote>
+    <p style="font-size:30px; font-weight:bold;" class="centered">namechange.html
+    <br><span style="font-size:18px; font-weight:normal;">not quite sure how you got here</span></p>
+    </blockquote>
+    <hr style="border:black solid 2px:">
+    <br>
+<!-- i might write some interesting things here not sure tbh -->
+
+<section class="gridtastic"> <!-- john fucking section over here -->
+<div class="tt1">
+    Section 1 - HTML elements
+</div>
+<div class="mm1"> <!-- mm1 beginning -->
+<table>
+    <tr>
+        <td>text</td>
+        <td>ivenothingtoputhere</td>
+        <td>im tired</td>
+    </tr>
+    <tr>
+        <td colspan="3">colspan spans columns</td>
+    </tr>
+    <tr>
+        <td rowspan="3"> this is rowspan </td>
+    </tr>
+    <tr>
+        <td>text</td>
+        <td>nil</td>
+    </tr>
+    <tr>
+        <td>ight</td>
+        <td>nil</td>
+    </tr>
+</table>
+<p> text </p> <i> italic</i> <b> bold</b> <q>quotes</q> <a href="#divs"> linked text</a>
+<blockquote>
+    blockquote
+</blockquote>
+<ol>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <ol>
+        <li>one(one)</li>
+    </ol>
+</ol>
+<ul>
+    <li>dot</li>
+    <li>dot</li>
+    <li>dot</li>
+    <ul>
+        <li>dot(dot)</li>
+    </ul>
+</ul>
+
+quiz time
+<form>
+    <fieldset>
+        <legend>Places</legend>
+    <p><b> what is the the capital of the united states</b></p>
+    <input type="text" placeholder="Type here" value="value text">
+    <p><b>how old is the united states of america (as of July 4th 2026) </b></p>
+    <input type="radio" name="age of us" value="wrong"> 203 
+    <input type="radio" name="age of us" value="wrong"> 235 
+    <input type="radio" name="age of us" value="right"> 250 
+    <input type="radio" name="age of us" value="wrong"> 234 
+    <p><b>how many states are in the united states?</b></p>
+    <select>
+        <option value="wrong">57</option>
+        <option value="correct">50</option>
+        <option value="wrong">45</option>
+        <option value="wrong" selected>53</option>
+    </select>
+    <p><b>Write me a 2000 word essay about the importance of geographical location for revolunionary countires</b></p>
+    <textarea rows="10" cols="35" placeholder="Type here"></textarea>
+    <p><b>Did you pass this quiz (select all that apply)</b></p>
+    <br/>
+    <input type="checkbox">no <br/>
+    <input checked type="checkbox">non't <br/>
+    <input checked type="checkbox">yes <br/>
+    <input type="checkbox">yesn't <br/>
+    <input checked type="checkbox">perchance <br/>
+    <input checked type="checkbox">perhaps <br/>
+    <input checked type="checkbox">maybe <br/>
+    <input checked type="checkbox">sure <br/>
+    <input checked type="checkbox">hell yeah <br/>
+    <input type="checkbox">hell no <br/>
+    <input type="checkbox">nah <br/>
+    <input type="checkbox">nope <br/>
+    <input type="checkbox">not at all <br/>
+    </fieldset>
+    <input type="submit">
+    <input type="reset">
+    <button type="submit">submit(button tag)</button>
+    <button type="reset">reset(button tag)</button>
+</form>
+<p> quiz over :D</p>
+<img src="celebration.gif" alt="a large celebration party (there shouln't be an img here)">
+<!-- what am i even doing atp -->
+<img src="folder1/images/happy.jpg" alt="another image of celebration">
+<p>
+    go to this website to learn all of the ampersand notation things.
+    <br>
+    <a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references"> its also got other information</a>
+    its just written goofily &sup3; &equals; most special characters should be written in this format:<b> &amp;sup3;</b>
+    <br>
+    <b>&lt;p&gt; &lt;/p&gt;</b>
+</p>
+
+</div> <!--mm1 end -->
+<div class="tt2">
+    Section 2 - CSS styling
+</div>
+
+<div class="mm2"> <!--mm2 beginning -->
+
+<div style="background-image:linear-gradient(to bottom left, rgba(146, 176, 224, 0.5), rgba(230, 234, 240, 0.5)); width:80%; border:1px black solid; padding:2px;">
+<breakquote>
+   <span style="font-size:25px;">CSS</span>
+</breakquote>
+<p style="font-family:'impact';font-size:25px">yayyy css :p <span style="font-size:25px;font-family:'times new roman';">dude you're gonna love the style tag</span> the span tag will be your best friend trust
+<br>
+there's so much shit to this attribute it's not even funny :/ ill probably just link a google doc here or wtv</p>
+    <p> <br>text-decoration<br>
+        <span style="text-decoration:overline;">overline </span>
+        <span style="text-decoration:underline;">underline</span>
+    <span style="text-decoration:line-through">line-through</span>
+    <br><br>
+    font-style<br>
+    <span style="font-style:italic;">italic</span>
+    <span style="font-style:oblique;">oblique</span>
+    <span style="font-style:normal;">normal</span>
+    <br><br>
+    font-weight<br>
+    <span style="font-weight:light;">light</span>
+    <span style="font-weight:normal;">normal</span>
+    <span style="font-weight:bold;">bold</span>
+    <span style="font-weight:bolder;">bolder</span>
+    <br><br>
+    <sub>sub</sub><sup>sup</sup><br><br>
+    <b>text-align</b>
+    <table>
+        <tr>
+    <td style="text-align:center;">center</td>
+     </tr>
+     <tr>
+    <td style="text-align:right;">right</td>
+    </tr>
+     <tr>
+    <td style="text-align:left;">left (writing more so the others are easier to see)</td>
+        </tr>
+    </table><br>
+    <b>vertical-align</b>
+     <table>
+        <tr>
+    <td rowspan="3" style="vertical-align:middle;">middle</td>
+    <td rowspan="3" style="vertical-align:top;">top</td>
+    <td rowspan="3" style="vertical-align:bottom;">bottom</td>
+        </tr>
+        <tr>
+        <td>wall of text</td>
+     </tr>
+     <tr>
+        <td>wall of text</td>
+     </tr>
+    </table>
+    <p style="font-family:times new roman; font-size:20px">ive gotta go over hex codes to have this make sense. so hex codes are a base 16 system, 0-F.  (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,10,11...(10,1A,1B,1C) so #FF0000 is pure red. so rgb (red green blue). the code of rgb(255,0,0) is pure red. adding 'a' to the end of it gives you "rgba" in which the 'a' means alpha, or opacity of the color. it should be between 1 and 0 "rgba(255,0,0,0.5)"</p>
+    <span style="font-family:times new roman; font-size:5px">endless shades of 1's and 0's ad nihilihum</span><br>
+let me tell you how much i've come to 
+<span style="color:#FF0000">hate</span>
+<span style="color:white;background-color:black;">the color attribute. If you want to use it, either use the names of the colors, hex codes, or the RGBA code. dont even bother with the HSL values. (its not worth it)</span><br>
+<h3>anywho</h3><br> 
+<span style="font-size:20px;">There is the font-size does what you think, with its value being in (#)px or (#)em. </span><br><br>
+<span style="font-family:times new roman, impact, arial; font-size:20px;">some bs is the font-family, it can have any font on the computer, along with a backup to be sure to have a visible font on all computers.</span>
+<br><b>and then color</b><br>
+<span style="color:rgba(233,48,134,1.0)">this is some color. use 'color' as the property of the 'style' attribute. then input the :#FFACAE or :(r,g,b,a)<br> same goes for the background-color property.</span><br><br>
+</div>
+<div class="main" style="background-image: linear-gradient(to bottom right, rgba(0, 47, 255, 0.25), rgba(0, 255, 242, 0.50)); height:350px; width:350px">
+<p id="divs">now,
+DIVS. used to break up parts of a website, and add color everywhere. <br> there's so much to divs, ill just make a doc for notes and just have an entire page dedicated to them smh. <br> just don't overuse it, k? <br> <br> oh yeah you can also put gradients behind them, along with images with the background-image property.</p>
+</div>
+
+<b style="font-size:25px;">any further use of the style attribute <br>can be used on previously mentioned tags.</b>
+<breakquote>
+    <h1>internal CSS</h1>
+</breakquote>
+<p>done by using the 'style' tag in the 'head' tag.it does some fuck shit and it works. im not complaining. <br> i would type out the thingamadodad but it takes a while, and you can just use the inspect element anyway.</p>
+<p>you can use the same styles used for inline styling, along with some others. its better to use it just for segregation's sake.</p>
+<h2>oh yeah grids</h2>
+<p>just look in the code atp its too hard to explain shorthand.</p>
+<section class="gridtainer">
+        <div class="grid-item1">Header</div>
+  <div class="grid-item2">Navigation</div>
+  <div class="grid-item3">Main Content</div>
+  <div class="grid-item4">Footer</div>
+    </section>
+    <h2>use flexbox btw</h2>
+    <i>its lwk very good</i>
+    <p>use display:flex; <br> and display:grid; for grids <span style="font-size:10px">wowie</span></p>
+    <p>anyway all of this should be grouped in grids soon :> (because grids are so peaks)</p>
+    
+    </div><!-- end of sector 2 -->
+    <div class="cc">
+       <p style="margin:auto;">text</p>
+    </div>
+    </section> <!-- john fucking section part 2 - electric boogaloo -->
+</body>
+</html>
